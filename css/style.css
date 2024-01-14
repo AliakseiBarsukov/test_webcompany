@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* pt-sans-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../assets/fonts/pt-sans-v17-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pt-sans-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./../assets/fonts/pt-sans-v17-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.body-fix {
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+}
+
+svg, img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1189px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.link {
+  transition: color 0.3s ease-in-out;
+}
+.link:hover {
+  color: #FBFF3D;
+}
+
+.header {
+  background-color: #265C9A;
+  padding-top: 21px;
+  color: #fff;
+}
+.header__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 22px;
+}
+.header__phone {
+  margin-left: 86px;
+  font-size: 19px;
+}
+.header__search {
+  margin-left: 87px;
+}
+.header__search-input {
+  background-color: transparent;
+  width: 281px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #517DAE;
+  background-image: url("./../assets/img/search.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px;
+}
+.header__search-input::-moz-placeholder {
+  color: #fff;
+}
+.header__search-input:-ms-input-placeholder {
+  color: #fff;
+}
+.header__search-input::placeholder {
+  color: #fff;
+}
+.header__delivery {
+  margin-left: auto;
+  border-bottom: 1px solid #fff;
+  transition: color 0.3s ease-in-out;
+}
+.header__delivery:hover {
+  color: #FBFF3D;
+}
+.header__cart {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  bottom: -31px;
+  transition: color 0.3s ease-in-out;
+}
+.header__cart:after {
+  content: "КОРЗИНА";
+  margin-left: 9px;
+}
+.header__cart:hover {
+  color: #FBFF3D;
+}
+
+.nav {
+  background-color: #1F497B;
+  color: #fff;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  gap: 39px;
+}/*# sourceMappingURL=style.css.map */

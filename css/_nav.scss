@@ -1,0 +1,12 @@
+.nav {
+  background-color: #1F497B;
+  color: #fff;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    gap: 39px;
+  }
+}

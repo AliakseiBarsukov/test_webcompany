@@ -1,0 +1,68 @@
+.header {
+  background-color: #265C9A;
+  padding-top: 21px;
+  color: #fff;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 22px;
+  }
+
+  &__phone {
+    margin-left: 86px;
+    font-size: 19px;
+  }
+
+  &__search {
+    margin-left: 87px;
+
+    &-input {
+      background-color: transparent;
+      width: 281px;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-bottom: 1px solid #517DAE;
+      background-image: url("./../assets/img/search.svg");
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 20px;
+
+      &::placeholder {
+        color:#fff;
+      }
+    }
+
+
+  }
+
+  &__delivery {
+    margin-left: auto;
+    border-bottom: 1px solid #fff;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color:#FBFF3D;
+    }
+  }
+
+  &__cart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    bottom: -31px;
+    transition: color .3s ease-in-out;
+
+    &:after {
+      content: "КОРЗИНА";
+      margin-left: 9px;
+    }
+
+    &:hover {
+      color:#FBFF3D;
+    }
+  }
+}
