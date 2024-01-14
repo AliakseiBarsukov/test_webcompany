@@ -1,13 +1,20 @@
 .header {
   background-color: #265C9A;
   padding-top: 21px;
+  margin-bottom: 25px;
   color: #fff;
 
   &__wrapper {
     position: relative;
     display: flex;
     align-items: center;
-    padding-bottom: 22px;
+    padding-bottom: 16px;
+  }
+
+  &__logo {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
   }
 
   &__phone {

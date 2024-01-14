@@ -16,7 +16,6 @@
         <h1 class="header__logo">ЛОГОТИП</h1>
         <a class="header__phone link" href="tel:88007775050">8 800 777 50 50</a>
         <form class="header__search">
-          <!-- <button type="submit">@</button> -->
           <input class="header__search-input" type="text" placeholder="Поиск товаров">
         </form>
         <a class="header__delivery link" href="#">Доставка и оплата</a>
@@ -31,7 +30,7 @@
       <div class="container">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__item-link link" href="#"></a>
+            <a class="nav__item-link link" href="#">МОБИЛЬНЫЕ ТЕЛЕФОНЫ</a>
           </li>
           <li class="nav__item">
             <a class="nav__item-link link" href="#">ПЛАНШЕТЫ</a>
@@ -50,7 +49,90 @@
     </nav>
   </header>
 
-  <main></main>
+  <main>
+    <section class="product">
+      <div class="container">
+        <div class="product__filter filter">
+          <div class="filter__wrapper">
+            <div class="filter__category filter__select">
+              <p>Любого логотипа</p>
+            </div>
+            <ul class="filter__category-list filter__list">
+              <li class="filter__category-item">Компакт-камера</li>
+              <li class="filter__category-item">Беззеркальная</li>
+              <li class="filter__category-item">Зеркальная</li>
+              <li class="filter__category-item">Среднеформатная</li>
+            </ul>
+          </div>
+          <div class="filter__wrapper">
+            <div class="filter__brand filter__select">
+              <p>Любого бренда</p>
+            </div>
+            <ul class="filter__brand-list filter__list">
+              <li class="filter__brand-item">Canon</li>
+              <li class="filter__brand-item">Nikon</li>
+              <li class="filter__brand-item">Sony</li>
+              <li class="filter__brand-item">Fujifilm</li>
+              <li class="filter__brand-item">Samsung</li>
+              <li class="filter__brand-item">Olympus</li>
+            </ul>
+          </div>
+
+          <form class="filter__price">
+            <p>ПО ЦЕНЕ</p>
+            <div class="filter__wrap">
+              <fieldset class="filter__fieldset">
+                <label class="filter__label" for="">от</label>
+                <input class="filter__input" type="number" placeholder="500 000" min="0">
+              </fieldset>
+              <fieldset class="filter__fieldset">
+                <label class="filter__label" for="">до</label>
+                <input class="filter__input" type="number" placeholder="25 000 000" min="0">
+              </fieldset>
+            </div>
+            <p>РУБЛЕЙ</p>
+          </form>
+
+        </div>
+
+        <ul class="product__list card__list">
+          <li class="product__item card card__big">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+          <li class="product__item card">
+            <p>card</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

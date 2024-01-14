@@ -71,7 +71,17 @@ ul, li {
   margin: 0;
 }
 
+fieldset {
+  margin: 0;
+}
+
 h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
 }
 
@@ -91,13 +101,19 @@ h1, h2, h3, h4, p {
 .header {
   background-color: #265C9A;
   padding-top: 21px;
+  margin-bottom: 25px;
   color: #fff;
 }
 .header__wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  padding-bottom: 22px;
+  padding-bottom: 16px;
+}
+.header__logo {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
 }
 .header__phone {
   margin-left: 86px;
@@ -160,5 +176,103 @@ h1, h2, h3, h4, p {
   align-items: center;
   padding-top: 13px;
   padding-bottom: 12px;
-  gap: 39px;
+}
+.nav__item {
+  padding-right: 39px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+.filter__wrapper {
+  width: 100%;
+  max-width: 264px;
+  color: #484848;
+}
+.filter__wrapper:first-child {
+  margin-right: 14px;
+}
+.filter__select {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 17px;
+  border: 1px solid #D0D0D0;
+  color: #484848;
+  cursor: pointer;
+}
+.filter__select:after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 12px;
+  background-image: url("./../assets/img/caret-down.svg");
+}
+.filter__list {
+  position: absolute;
+  width: 100%;
+  max-width: 264px;
+  background-color: #fff;
+  padding: 4px 0px 10px;
+  border: 1px solid #D0D0D0;
+  display: none;
+}
+.filter li {
+  padding: 5px 17px;
+  cursor: pointer;
+}
+.filter li:hover {
+  background-color: #E8EEFF;
+}
+.filter__price {
+  display: flex;
+  align-items: center;
+  margin-left: 27px;
+}
+.filter__price p {
+  color: #484848;
+}
+.filter__wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 14px;
+  margin-right: 9px;
+}
+.filter__fieldset {
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  gap: 14px;
+  max-width: 133px;
+  border: 1px solid #D0D0D0;
+}
+.filter__label {
+  color: #484848;
+}
+.filter__input {
+  width: 100%;
+  max-width: 181px;
+  border: none;
+  font-size: 16px;
+}
+.filter__input::-moz-placeholder {
+  text-align: end;
+  color: #484848;
+  font-size: 16px;
+  font-weight: 700;
+}
+.filter__input:-ms-input-placeholder {
+  text-align: end;
+  color: #484848;
+  font-size: 16px;
+  font-weight: 700;
+}
+.filter__input::placeholder {
+  text-align: end;
+  color: #484848;
+  font-size: 16px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

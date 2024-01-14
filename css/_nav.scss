@@ -7,6 +7,9 @@
     align-items: center;
     padding-top: 13px;
     padding-bottom: 12px;
-    gap: 39px;
+  }
+
+  &__item {
+    padding-right: 39px;
   }
 }

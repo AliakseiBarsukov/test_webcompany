@@ -1,0 +1,100 @@
+.filter {
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 264px;
+    color: #484848;
+
+    &:first-child {
+      margin-right: 14px;
+    }
+  }
+
+  &__select {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 17px;
+    border: 1px solid #D0D0D0;
+    color: #484848;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 13px;
+      height: 12px;
+      background-image: url("./../assets/img/caret-down.svg");
+    }
+  }
+
+
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    max-width: 264px;
+    background-color: #fff;
+    padding: 4px 0px 10px;
+    border: 1px solid #D0D0D0;
+    display: none;
+  }
+
+  & li {
+    padding: 5px 17px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #E8EEFF;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-left: 27px;
+
+    & p {
+      color: #484848;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+    margin-right: 9px;
+  }
+
+  &__fieldset {
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    gap: 14px;
+    max-width: 133px;
+    border: 1px solid #D0D0D0;
+  }
+
+  &__label {
+    color: #484848;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 181px;
+    border: none; 
+    font-size: 16px;
+
+    &::placeholder {
+      text-align: end;
+      color: #484848;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}
