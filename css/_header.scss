@@ -48,10 +48,12 @@
   &__delivery {
     margin-left: auto;
     border-bottom: 1px solid #fff;
-    transition: color .3s ease-in-out;
+    border-bottom: -2px;
+    transition: all .3s ease-in-out;
 
     &:hover {
       color:#FBFF3D;
+      border-color: #FBFF3D;
     }
   }
 
